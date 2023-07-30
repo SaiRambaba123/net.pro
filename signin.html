@@ -1,0 +1,246 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sign in</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    body{
+        position: absolute;
+        width:100%;
+        height: 600px;
+        background: url('img/car1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }  
+    body::before
+    {
+        content: '';
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background: rgba(23, 21, 21, 0.596);
+
+    }  
+    .container h1{
+        background:   #2bd2ff;
+        box-shadow:  0 0 5px   #2bd2ff,
+                    0 0 15px  #2bd2ff  , 
+                    0 0 40px   #2bd2ff,
+                    0 0 60px    #2bd2ff; 
+                    cursor: pointer;
+                    z-index: 2;
+
+    }
+
+
+    .container .section
+    {
+        position: absolute;
+        width:350px;
+        height: 412px;
+        background-color:rgba(255,255,255,0.3);
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        left:369px;
+        top:100px;
+    }
+    .container .section .sign
+    {
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        color: white;
+    }
+    .container .section .email
+    {
+        position: absolute;
+        top: 65px;
+        left: 30px;
+        color: white; 
+        width:250px;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+        outline: none;
+    }
+    .container .section .pass
+    {
+        position: absolute;
+        top: 110px;
+        left: 30px;
+        color: white; 
+        width:250px;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: none;
+        outline: none;
+    }
+    .container .section .btn1
+    {
+        position: absolute;
+        top: 160px;
+        left: 30px;
+        color: white; 
+        width:260px;
+        padding: 8px;
+        background-color: red;
+        border: none;
+        cursor: pointer;
+    }
+    .container .section .check
+    {
+        position: absolute;
+        top:200px;
+        left:30px;
+    }
+    .container .section .rem
+    {
+        position: absolute;
+        top:195px;
+        left:45px;
+        color: aliceblue;
+
+    }
+    .container .section .help
+    {
+        position: absolute;
+        top:195px;
+        right: 30px;
+        text-decoration: none;
+    }
+    .container .section .need
+    {
+        color: aliceblue;
+        
+    }
+    .container .section h4
+    {
+        position: absolute;
+        top:280px;
+        left:30px;
+        color: rgb(166, 180, 193);
+    }
+    .container .section h4 a
+    {
+        color: aliceblue;
+        text-decoration: none;
+        color: white;
+    }
+    .container .section p{
+        position: absolute;
+        top:320px;
+        left:30px;
+        color: aliceblue;
+    }
+    .container .section1 .home
+    {
+        float: right;
+        margin-right: 222px;
+        color:  black;
+        background:   #2bd2ff;
+        box-shadow:  0 0 5px   #2bd2ff,
+                    0 0 15px  #2bd2ff  , 
+                    0 0 40px   #2bd2ff,
+                    0 0 60px    #2bd2ff; 
+                    cursor: pointer;
+                    z-index: 2;  
+                    text-decoration:underline; 
+                    z-index: 4; 
+                                
+    }
+    .container .section1 .home:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .container .section1 .about
+    {
+        float: right;
+        margin-right: -130px;
+        color:  black;
+        background:   #2bd2ff;
+        box-shadow:  0 0 5px   #2bd2ff,
+                    0 0 15px  #2bd2ff  , 
+                    0 0 40px   #2bd2ff,
+                    0 0 60px    #2bd2ff; 
+                    cursor: pointer;
+                    z-index: 2;
+    }
+    .container .section1 .contact
+    {
+        float: right;
+        margin-right: -223px;
+        color:  black;
+        background:   #2bccf9;
+        box-shadow:  0 0 5px #2bccf9,
+                    0 0 15px #2bccf9  , 
+                    0 0 40px #2bccf9,
+                    0 0 60px   #2bccf9;
+                    
+                    
+    }
+
+    .container .section .btn1
+    {
+        background:   #2bd2ff;
+        box-shadow:  0 0 5px   #2bd2ff,
+                    0 0 15px  #2bd2ff  , 
+                    0 0 40px   #4fa9e1,
+                    0 0 60px    #111112; 
+                    cursor: pointer;
+    } 
+    .container .section .learnmore
+    {
+        background:   #2bd2ff;
+        box-shadow:  0 0 5px   #2bd2ff,
+                    0 0 15px  #2bd2ff  , 
+                    0 0 40px   #2bd2ff,
+                    0 0 60px    #2bd2ff; 
+                    cursor: pointer;
+                    z-index: 2;
+                    color:  black;
+                    text-decoration:  none;
+    }
+
+    </style>
+    <body>
+        <div class="container">
+            <section class="section1">
+                <a class="home" href="#" style="cursor: pointer;"><h4 style="color: rgb(98, 19, 224); z-index: 3;cursor: pointer;">HOME</h4></a>
+                <a  class="about" href="#"><h4 style="color: rgb(98,19,224); cursor: pointer;">ABOUT</h4></a>
+                <a  class="contact" href="#"><h4 style="color: rgb(98,19,224); cursor: pointer;" >CONTACT</h4></a>
+            </section>
+            <h1 style="color: rgb(197, 34, 110);">CARO.COM</h1>
+            <section class="section data-tilt">
+                <h2 class="sign">Sign up</h2>
+                <input class="email" type="email||number" placeholder="Email or Phone number">
+                <br>
+                <input class="pass" type="password" placeholder="password">
+                <br>
+                <button class="btn1" type="button">Sign in</button><br>
+                <input class="check" type="checkbox" ><h3 class="rem">Remember me</h3>
+            <a  class="help" href="https://www.wikihow.com/Login-to-a-Website-as-an-Admin" target="_blank"><h3 class="need">Need help?</h3></a>
+            <br>
+            <h4>New to website?<a href="#" target="_blank">Sign up now</a></h4>
+
+            <br>
+            <p>This page is protected by Google ReCAPTCHA to ensure you're not a bot <a class="learnmore" href="https://en.wikipedia.org/wiki/Car">Learn more</a></p>
+            </section>
+        </div>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.js"></script>
+        
+    </body>
+    </html>
